@@ -31,6 +31,7 @@ class Planet(db.Model):
     population: Mapped[int] = mapped_column(Integer, nullable=True)
     
     favorited_by_users: Mapped[List["FavoritePlanet"]] = relationship(back_populates="planet")
+ 
 
     def serialize(self):
         return {

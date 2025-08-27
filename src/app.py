@@ -10,7 +10,6 @@ from admin.setup_admin import setup_admin
 
 from models import db
 from routes.users import register_user_routes
-from routes.posts import register_post_routes
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
